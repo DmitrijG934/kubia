@@ -19,7 +19,7 @@ env:
   # github.repository as <account>/<repo>
   REGISTRY_USERNAME: 324124
   REGISTRY_PASSWORD: Erhfbyf2022!!
-  IMAGE_NAME: ${{ 324124/kubia }}
+  IMAGE_NAME: 324124/kubia
 
 
 jobs:
