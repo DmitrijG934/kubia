@@ -9,7 +9,7 @@ on:
   push:
     branches: [ "master" ]
     # Publish semver tags as releases.
-    tags: [ 'v*.*.*', 'latest' ]
+    tags: [ 'latest' ]
   pull_request:
     branches: [ "master" ]
 
@@ -70,8 +70,7 @@ jobs:
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
         with:
           context: .
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: ['latest']
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
