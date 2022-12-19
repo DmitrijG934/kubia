@@ -17,9 +17,9 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
   REGISTRY_USERNAME: 324124
   REGISTRY_PASSWORD: Erhfbyf2022!!
+  IMAGE_NAME: ${{ env.REGISTRY_USERNAME/github.repository }}
 
 
 jobs:
