@@ -68,11 +68,11 @@ jobs:
       - name: Build and push Docker image
         id: build-and-push
         uses: docker/build-push-action@ac9327eae2b366085ac7f6a2d02df8aa8ead720a
-        with:
-          context: .
-          tags: ${{ steps.meta.outputs.tags }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+#        with:
+#          context: .
+#          tags: ${{ steps.meta.outputs.tags }}
+#          cache-from: type=gha
+#          cache-to: type=gha,mode=max
 
 
 #      # Sign the resulting Docker image digest.
